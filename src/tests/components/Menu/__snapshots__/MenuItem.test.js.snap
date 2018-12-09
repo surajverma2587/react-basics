@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItem Component Tests should take snapshot of the component 1`] = `
+<div
+  className="menu-item"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-10"
+    >
+      <h4>
+        Some title
+      </h4>
+    </div>
+    <div
+      className="col-sm-1"
+    >
+      <h4>
+        £
+        10
+      </h4>
+    </div>
+    <div
+      className="col-sm-1"
+    >
+      <button
+        className="btn btn-success"
+        id="1"
+        onClick={[MockFunction]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <span>
+        Some description
+      </span>
+    </div>
+  </div>
+</div>
+`;

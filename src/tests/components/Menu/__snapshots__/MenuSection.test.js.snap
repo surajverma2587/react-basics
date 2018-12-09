@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuSection Component Tests should take snapshot of the component 1`] = `
+<div
+  className="menu-section"
+>
+  <div
+    className="menu-section-header"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-11"
+      >
+        <h4>
+          Section title
+        </h4>
+      </div>
+      <div
+        className="col-sm-1"
+      >
+        <button
+          className="btn btn-primary"
+          data-target="#11"
+          data-toggle="collapse"
+          type="button"
+        >
+          v
+        </button>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <span>
+          Section description
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="collapse"
+    id="11"
+  >
+    <MenuItem
+      description="description 1"
+      id="1"
+      key="1"
+      onClick={[MockFunction]}
+      price={4}
+      title="title 1"
+    />
+    <MenuItem
+      description="description 2"
+      id="2"
+      key="2"
+      onClick={[MockFunction]}
+      price={10}
+      title="title 2"
+    />
+  </div>
+</div>
+`;
