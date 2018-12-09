@@ -1,0 +1,107 @@
+{
+  "title": "Halo",
+  "address": "109 London Road, Stockport, SK7 4HH",
+  "imgUrl": "https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35.jpg",
+  "reviews": 2067,
+  "rating": 4.6,
+  "menuSections": [
+    {
+      "id": "S001",
+      "title": "Burgers",
+      "description": "All burgers include cos lettuce, red onions & tomatoes. Add fries £1.39, curly fries £1.79 & sweet potato fries £2.29 extra are available",
+      "menuItems": [
+        {
+          "id": "S1I001",
+          "title": "Common Guy Burger",
+          "description": "Classic beef patty served with American cheese, lettuce, onions, tomato & ketchup on a toasted sesame seed bun",
+          "price": 3.99
+        },
+        {
+          "id": "S1I002",
+          "title": "Classic Chicken Burger",
+          "description": "Classic chicken fillet burger served with lettuce & mayo on a toasted sesame bun",
+          "price": 3.99
+        },
+        {
+          "id": "S1I003",
+          "title": "Deluxe Cheeseburger",
+          "description": "Beef patty, beef stock, cheese spread, monetary jack cheese & halo sauce",
+          "price": 4.69
+        },
+        {
+          "id": "S1I004",
+          "title": "Veggie Burger",
+          "description": "Classic vegetarian burger with American cheese & mayo",
+          "price": 3.99
+        },
+        {
+          "id": "S1I005",
+          "title": "Chicken Supreme Burger",
+          "description": "Chicken fillet with crispy smoked bacon, onion rings, classic American cheese & mayo",
+          "price": 5.39
+        },
+        {
+          "id": "S1I006",
+          "title": "Jack Daniel\"s Burger",
+          "description": "Beef patty, Jack Daniel\"s glaze, monetary jack cheese & smoked bacon",
+          "price": 5.89
+        },
+        {
+          "id": "S1I007",
+          "title": "Mexican Burger",
+          "description": "Chicken fillet, monetary jack cheese, hot salsa, nachos, jalapenos & guacamole",
+          "price": 5.69
+        },
+        {
+          "id": "S1I008",
+          "title": "Smoke House Burger",
+          "description": "Beef patty topped with BBQ pulled pork, monetary jack cheese, smoked crispy bacon, pickled onions & BBQ sauce",
+          "price": 6.29
+        },
+        {
+          "id": "S1I009",
+          "title": "Halo Burger",
+          "description": "Combination of both chicken, beef & bacon, combined with American cheese, fried onions all topped off with our deluxe Halo special sauce",
+          "price": 6.79
+        },
+        {
+          "id": "S1I010",
+          "title": "Jack Daniel\"s Chicken Burger",
+          "description": "Chicken fillet, jack Daniel\"s glaze, monetary jack cheese & smoked bacon",
+          "price": 5.89
+        }
+      ]
+    },
+    {
+      "id": "S002",
+      "title": "Wraps",
+      "description": "Add fries £1.39, curly fries £1.79 & sweet potato fries £2.29 extra are available",
+      "menuItems": [
+        {
+          "id": "S2I001",
+          "title": "Classic Wrap",
+          "description": "Chicken fillet, lettuce & mayo",
+          "price": 3.79
+        },
+        {
+          "id": "S2I002",
+          "title": "Peri Wrap",
+          "description": "Chicken fillet, lettuce & peri mayo",
+          "price": 3.99
+        },
+        {
+          "id": "S2I003",
+          "title": "Mexican Wrap",
+          "description": "Chicken fillet with American cheese, hot salsa, nachos, jalapenos & guacamole",
+          "price": 4.79
+        },
+        {
+          "id": "S2I004",
+          "title": "Halo Wrap",
+          "description": "Chicken fillet, extra crispy smoked bacon, double American cheese, sizzling onions & smothered in our deluxe Halo special sauce",
+          "price": 4.99
+        }
+      ]
+    }
+  ]
+}

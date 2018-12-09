@@ -1,0 +1,13 @@
+.cart {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 32px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+.cart-item {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
