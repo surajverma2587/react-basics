@@ -1,3 +1,4 @@
+/* MenuItem Styles */
 .menu_item {
   padding: 16px;
   border-bottom: 1px solid #dfdfdf;
@@ -24,17 +25,32 @@
   color: black;
 }
 
-.menu-section {
-  padding: 0 16px 16px;
+/* MenuSection Styles */
+.menu_section {
+  padding: 16px;
   border-top: 1px solid #dfdfdf;
+  color: #474747;
 }
 
-.menu-section-header {
-  color: #333;
-  font-weight: normal;
+.menu_section--title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.menu_section--description {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.menu_section--header {
   padding: 16px;
 }
 
+.menu_section--body {
+  border: 1px solid #dfdfdf;
+}
+
+/* Menu Styles */
 .menu {
   margin-top: 8px;
 }
