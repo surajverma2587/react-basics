@@ -1,11 +1,27 @@
-.menu-item {
+.menu_item {
   padding: 16px;
   border-bottom: 1px solid #dfdfdf;
+  color: #474747;
 }
 
-.menu-item h4 {
+.menu_item--title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu_item--price {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.menu_item--description {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.menu_item:hover { 
+  background-color: #F5F5F5;
+  color: black;
 }
 
 .menu-section {
@@ -25,6 +41,8 @@
 
 .restaurant {
   background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
 }
 
 body {
