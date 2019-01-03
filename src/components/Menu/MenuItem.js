@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import '../../assets/styles.css';
 
 const MenuItem = (/* props object */) => {
   /* bind the data from the props object to the html template */

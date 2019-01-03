@@ -62,8 +62,14 @@ describe('MenuSection Component', () => {
     });
   
     it('should render the MenuItem components', () => {
-      const menuItem = wrapper.find('MenuItem');  
-      expect(menuItem.length).toEqual(2);
+      const menuItems = wrapper.find('MenuItem');  
+      expect(menuItems.length).toEqual(2);
+      menuItems.forEach((menuItem, index) => {
+        expect(menuItem.prop('id')).toEqual(props.menuItems[index].id);
+        expect(menuItem.prop('title')).toEqual(props.menuItems[index].title);
+        expect(menuItem.prop('description')).toEqual(props.menuItems[index].description);
+        expect(menuItem.prop('price')).toEqual(props.menuItems[index].price);
+      });
     });
   });
 
@@ -82,9 +88,9 @@ describe('MenuSection Component', () => {
         { ...props, menuItems: [] },
         { ...props, onClickMenuItem: null },
       ];
-      invalidProps.map(invalidProp => {
+      invalidProps.forEach(invalidProp => {
         const wrapper = shallow(<MenuSection {...invalidProp} />);
-        return expect(wrapper.find('.menu_section').exists()).toBe(false);
+        expect(wrapper.find('.menu_section').exists()).toBe(false);
       });
     });
   });

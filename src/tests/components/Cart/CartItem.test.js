@@ -58,9 +58,9 @@ describe('CartItem Component', () => {
         { ...props, onClick: null },
       ];
   
-      invalidProps.map(invalidProp => {
+      invalidProps.forEach(invalidProp => {
         const wrapper = shallow(<CartItem {...invalidProp} />);
-        return expect(wrapper.find('.cart_item').exists()).toBe(false);
+        expect(wrapper.find('.cart_item').exists()).toBe(false);
       });
     });
   });

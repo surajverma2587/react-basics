@@ -65,9 +65,9 @@ describe('MenuItem Component', () => {
         { ...props, onClick: null },
       ];
   
-      invalidProps.map(invalidProp => {
+      invalidProps.forEach(invalidProp => {
         const wrapper = shallow(<MenuItem {...invalidProp} />);
-        return expect(wrapper.find('.menu_item').exists()).toBe(false);
+        expect(wrapper.find('.menu_item').exists()).toBe(false);
       });
     });
   });

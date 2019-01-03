@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Component when props are valid should render snapshot of the component 1`] = `
+<div
+  className="cart"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <span
+        className="cart--title"
+      >
+        Cart
+      </span>
+      <hr />
+      <CartItem
+        description="description 1"
+        id="1"
+        key="1"
+        onClick={[MockFunction]}
+        price={4}
+        title="title 1"
+      />
+      <CartItem
+        description="description 2"
+        id="2"
+        key="2"
+        onClick={[MockFunction]}
+        price={10}
+        title="title 2"
+      />
+      <CartTotals
+        delivery={3}
+        subTotal={10}
+        taxes={2}
+        total={15}
+      />
+    </div>
+  </div>
+</div>
+`;

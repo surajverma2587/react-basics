@@ -15,7 +15,7 @@ exports[`CartItem Component when props are valid should render snapshot of the c
       </span>
     </div>
     <div
-      className="col-sm-1  cart_item--price"
+      className="col-sm-1 cart_item--price"
     >
       <span>
         £

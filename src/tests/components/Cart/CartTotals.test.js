@@ -62,9 +62,9 @@ describe('CartTotals Component', () => {
         { ...props, total: null },
       ];
   
-      invalidProps.map(invalidProp => {
+      invalidProps.forEach(invalidProp => {
         const wrapper = shallow(<CartTotals {...invalidProp} />);
-        return expect(wrapper.find('.cart_totals').exists()).toBe(false);
+        expect(wrapper.find('.cart_totals').exists()).toBe(false);
       });
     });
   });

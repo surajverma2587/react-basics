@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from './MenuItem';
-import './styles.css';
+import '../../assets/styles.css';
 
 const renderMenuItems = (/* menuItems */) => {
   /* map through the menuItems prop and return a list of MenuItem components */
@@ -12,6 +12,11 @@ const MenuSection = (/* props object */) => {
   /* validate the props and render the component IF valid ELSE null */
   /* remember to call renderMenuItems() to render a list of MenuItem components */
   /* replace the bottom return statement with the populated html template */
+  return (
+    <div>
+      MenuSection Component
+    </div>
+  );
 };
 
 /* display name for the component */
