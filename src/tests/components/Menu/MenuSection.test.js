@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import MenuSection from '../../../components/Menu/MenuSection';
 
 const props = {
@@ -23,69 +24,68 @@ const props = {
   onClickMenuItem: jest.fn(),
 };
 
-describe('MenuSection Component Tests', () => {
-  it('should take snapshot of the component', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    expect(wrapper).toMatchSnapshot();
+describe('MenuSection Component', () => {
+  describe('when props are valid', () => {
+    let wrapper;
+
+    beforeEach(() => {
+      wrapper = shallow(<MenuSection {...props} />);
+    });
+
+    it('should render snapshot of the component', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  
+    it('should render the component as expected', () => {
+      const menuSection = wrapper.find('.menu_section');
+      expect(menuSection.exists()).toBe(true);
+    });
+  
+    it('should render the title', () => {
+      const title = wrapper.find('.menu_section--title');
+      expect(title.text()).toEqual(props.title);
+    });
+  
+    it('should render the description', () => {
+      const description = wrapper.find('.menu_section--description');
+      expect(description.text()).toEqual(props.description);
+    });
+  
+    it('should render the collapsible button', () => {
+      const button = wrapper.find('button');  
+      expect(button.prop('data-target')).toEqual(`#${props.id}`);
+    });
+  
+    it('should render the collapsible div containing menu items', () => {
+      const collapsibleDiv = wrapper.find('.collapse');  
+      expect(collapsibleDiv.prop('id')).toEqual(props.id);
+    });
+  
+    it('should render the MenuItem components', () => {
+      const menuItem = wrapper.find('MenuItem');  
+      expect(menuItem.length).toEqual(2);
+    });
   });
 
-  it('should render the component as expected when all props are valid', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const menuSection = wrapper.find('.menu-section');
-
-    expect(menuSection.exists()).toBe(true);
-  });
-
-  it('should render the title of the menu section', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const title = wrapper.find('h4').at(0);
-
-    expect(title.text()).toEqual(props.title);
-  });
-
-  it('should render the description of the menu section', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const description = wrapper.find('span').at(0);
-
-    expect(description.text()).toEqual(props.description);
-  });
-
-  it('should render the collapsible button of the menu section', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const button = wrapper.find('button');
-
-    expect(button.prop('data-target')).toEqual(`#${props.id}`);
-  });
-
-  it('should render the collapsible div of the menu section', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const collapsibleDiv = wrapper.find('.collapse');
-
-    expect(collapsibleDiv.prop('id')).toEqual(props.id);
-  });
-
-  it('should render the MenuItems components', () => {
-    const wrapper = shallow(<MenuSection {...props} />);
-    const menuItem = wrapper.find('MenuItem');
-
-    expect(menuItem.length).toEqual(2);
-  });
-
-  it('should not render the component when props are missing', () => {
-    const wrapper = shallow(<MenuSection onClickMenuItem={jest.fn()} />);
-    expect(wrapper.find('.menu-section').exists()).toBe(false);
-  });
-
-  it('should not render the component when props are invalid', () => {
-    const invalidProps = [
-      { ...props, id: '' },
-      { ...props, title: '' }, 
-      { ...props, description: '' },
-      { ...props, menuItems: [] },
-    ];
-    invalidProps.map(invalidProp => {
-      const wrapper = shallow(<MenuSection {...invalidProp} />);
-      return expect(wrapper.find('.menu-section').exists()).toBe(false);
+  describe('when props are invalid', () => {
+    it('should not render the component when props are not present', () => {
+      const wrapper = shallow(<MenuSection />);
+      expect(wrapper.find('.menu_section').exists()).toBe(false);
+    });
+  
+    it('should not render the component when any prop is invalid', () => {
+      const invalidProps = [
+        { ...props, id: null },
+        { ...props, title: null }, 
+        { ...props, description: null },
+        { ...props, menuItems: null },
+        { ...props, menuItems: [] },
+        { ...props, onClickMenuItem: null },
+      ];
+      invalidProps.map(invalidProp => {
+        const wrapper = shallow(<MenuSection {...invalidProp} />);
+        return expect(wrapper.find('.menu_section').exists()).toBe(false);
+      });
     });
   });
 });

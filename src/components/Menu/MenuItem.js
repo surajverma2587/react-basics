@@ -1,5 +1,6 @@
 import React from 'react';
-/* import PropTypes and styles here */
+import PropTypes from 'prop-types';
+import './styles.css';
 
 const MenuItem = (/* props object */) => {
   /* bind the data from the props object to the html template */
@@ -17,10 +18,6 @@ MenuItem.displayName = 'MenuItem';
 
 MenuItem.propTypes = {
   /* add Proptypes here */
-};
-
-MenuItem.defaultProps = {
-  /* add default values to required props */
 };
 
 export default MenuItem;

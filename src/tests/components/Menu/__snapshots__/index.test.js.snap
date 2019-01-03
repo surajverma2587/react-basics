@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu Component Tests should take snapshot of the component 1`] = `
+exports[`Menu Component when props are valid should render snapshot of the component 1`] = `
 <div
   className="restaurant"
 >

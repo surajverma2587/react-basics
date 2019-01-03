@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MenuItem Component Tests should take snapshot of the component 1`] = `
+exports[`MenuItem Component when props are valid should render snapshot of the component 1`] = `
 <div
-  className="menu-item"
+  className="menu_item"
 >
   <div
     className="row"
   >
     <div
-      className="col-sm-10"
+      className="col-sm-10 menu_item--title"
     >
-      <h4>
+      <span>
         Some title
-      </h4>
+      </span>
     </div>
     <div
-      className="col-sm-1"
+      className="col-sm-1 menu_item--price"
     >
-      <h4>
+      <span>
         £
         10
-      </h4>
+      </span>
     </div>
     <div
       className="col-sm-1"
@@ -39,7 +39,7 @@ exports[`MenuItem Component Tests should take snapshot of the component 1`] = `
     className="row"
   >
     <div
-      className="col-sm-12"
+      className="col-sm-12 menu_item--description"
     >
       <span>
         Some description
