@@ -6,11 +6,16 @@ class App extends Component {
     super(props);
 
     /* bind functions if needed here */
-    /* define state here */
+    /* define application state here */
   }
 
   componentDidMount() {
     /* fetch data from the server and update state here */
+    /* if you are using local data then update state with local data here */
+  }
+
+  recalculate(/* items */) {
+    /* calculate the sub total, taxes, delivery and total and return the values */
   }
 
   onClickCartItem(/* event */) {
@@ -26,10 +31,13 @@ class App extends Component {
   }
 
   render() {
-    /* return the populated app template */
+    /* If the loading state is true then render loading */
+    /* If the error state is true then render error */
+    /* Note: If the total is 0 then do not render the Cart. */
+    /* Else return the populated app template and replace the bottom return statement */
     return (
       <div className="container">Your App goes here...</div>
-    )
+    );
   }
 }
 
