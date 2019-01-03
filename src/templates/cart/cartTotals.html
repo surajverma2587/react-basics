@@ -9,21 +9,42 @@
   <body>
     <div id="root">
       <div class="container">
-        <!-- CartItem HTML Markup start -->
-          <div class="cart_item">
+        <!-- CartTotals HTML Markup start -->
+          <div class="cart_totals">
             <div class="row">
-              <div class="col-sm-10 cart_item--title">
-                <span>Common Guy Burger</span>
+              <div class="col-sm-6 cart_totals--info">
+                <span>Sub-Total:</span>
               </div>
-              <div class="col-sm-1 cart_item--price">
-                <span>£3.99</span>
+              <div class="col-sm-6 cart_totals--price">
+                <span>£20.00</span>
               </div>
-              <div class="col-sm-1">
-                <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 cart_totals--info">
+                <span>Taxes:</span>
+              </div>
+              <div class="col-sm-6 cart_totals--price">
+                <span>£2.50</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 cart_totals--info">
+                <span>Delivery:</span>
+              </div>
+              <div class="col-sm-6 cart_totals--price">
+                <span>£1.50</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 cart_totals--info">
+                <span>TOTAL:</span>
+              </div>
+              <div class="col-sm-6 cart_totals--price">
+                <span>£24.00</span>
               </div>
             </div>
           </div>
-        <!-- CartItem HTML Markup end -->
+        <!-- CartTotals HTML Markup end -->
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

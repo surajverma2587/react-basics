@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartTotals Component when props are valid should render snapshot of the component 1`] = `
+<div
+  className="cart_totals"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6 cart_totals--info"
+    >
+      <span>
+        Sub-Total:
+      </span>
+    </div>
+    <div
+      className="col-sm-6 cart_totals--price"
+    >
+      <span>
+        £
+        10
+      </span>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6 cart_totals--info"
+    >
+      <span>
+        Taxes:
+      </span>
+    </div>
+    <div
+      className="col-sm-6 cart_totals--price"
+    >
+      <span>
+        £
+        2
+      </span>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6 cart_totals--info"
+    >
+      <span>
+        Delivery:
+      </span>
+    </div>
+    <div
+      className="col-sm-6 cart_totals--price"
+    >
+      <span>
+        £
+        3
+      </span>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6 cart_totals--info"
+    >
+      <span>
+        TOTAL:
+      </span>
+    </div>
+    <div
+      className="col-sm-6 cart_totals--price"
+    >
+      <span>
+        £
+        15
+      </span>
+    </div>
+  </div>
+</div>
+`;
