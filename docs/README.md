@@ -10,7 +10,7 @@ The cart displays the menu items added to the cart with the option of deleting t
 
 This is a function-based component that should render the individual menu-item and display information such as title, a short description, and price of the menu-item. It should also render a button that allows a user to add the respective menu-item to the cart during an on-click event.
 
-The props for this component are as follows:
+#### Props
 
 | Prop Name     | Prop Type | Description                                       | Required |
 |:-------------:|:---------:|:-------------------------------------------------:|:--------:|
@@ -22,6 +22,19 @@ The props for this component are as follows:
 
 *Note:* If any of the required props are missing the component should not be rendered. 
 
+#### Usage
+
+```javascript
+<MenuItem
+  id="123"
+  title="Some Title"
+  description="Some description"
+  price={3.99}
+  onClick={() => {}}
+/>
+```
+
+#### HTML Template
 The HTML template for the menu-item is as shown below. Open the file [menuItem.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/menu/menuItem.html) from the project on your machine in any web browser to preview the menu-item component with all the required styling applied.
 
 ```html
