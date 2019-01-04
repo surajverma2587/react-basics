@@ -21,3 +21,26 @@ The props for this component are as follows:
 | onClick       | function  | the function to invoke when add button is clicked | yes      |
 
 *Note:* If any of the required props are missing the component should not be rendered. 
+
+The HTML template for the menu-item is as shown below. Open the file [menuItem.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/menu/menuItem.html) from the project on your machine in any web browser to preview the menu-item component with all the required styling applied.
+
+```html
+<div class="menu_item">
+  <div class="row">
+    <div class="col-sm-10 menu_item--title">
+      <span>Common Guy Burger</span>
+    </div>
+    <div class="col-sm-1 menu_item--price">
+      <span>£3.99</span>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-success" id="id" onClick="onClickFunction()">+</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 menu_item--description">
+      <span>Classic beef patty served with American cheese, lettuce, onion, tomato & ketchup on a toasted sesame seed bun.</span>
+    </div>
+  </div>
+</div>
+```
