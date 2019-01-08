@@ -3,12 +3,12 @@
 
 **"Just Ate"** is a react-based web application, similar to [Just Eat](https://www.just-eat.co.uk/restaurants-halo-stockport/menu), that allows a user to view an online menu of a restaurant and add items to their cart. The online restaurant menu constitutes a list of menu-items, such as Classic Wrap, under their respective menu-sections, such as Wraps, along with additional information such as restaurant information, titles, short descriptions, prices, buttons to add items to the cart, and collapsible panels for menu-sections (as shown below).
 
-![App Preview](https://github.com/surajverma2587/react-basics/blob/master/docs/resources/app_preview.png)
+![App Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/app_preview.png)
 
 The cart displays the menu items added to the cart, a delete button to delete the menu item/s from the cart along with pricing information such as sub-total, taxes, delivery fees and the total to pay (as shown below).
 
-![Cart Preview](https://github.com/surajverma2587/react-basics/blob/master/docs/resources/cart_preview.png)
-
+![Cart Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_preview.png)
+      
 ## App Components
 ### Menu Item Component
 
