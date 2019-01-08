@@ -16,6 +16,7 @@ The cart displays the menu items added to the cart, a delete button to delete th
       
 ## App Components
 ### Menu Item Component
+[Back to Index](#index)
 
 This is a function-based component that should render the individual menu-item and display information such as title, a short description, and price of the menu-item. It should also render a button that allows a user to add the respective menu-item to the cart during an on-click event. The component preview is shown below.
 
@@ -70,6 +71,7 @@ The HTML template for the menu-item is as shown below. Open the file [menuItem.h
 ```
 
 ### Menu Section Component
+[Back to Index](#index)
 
 This is a function-based component that should render the individual menu-section and display information such as title, a short description, and a list of menu-item components. It should also render a button that allows a user to collapse/expand the panel containing the menu-items. The component preview of the menu-section when expanded is shown below.
 
@@ -183,6 +185,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
 ```
 
 ### Menu Component
+[Back to Index](#index)
 
 This is a function-based component that should render the individual menu and display information such as title, address, image, reviews, ratings, and a list of menu-section components. The component preview of the menu is shown below.
 
