@@ -1,3 +1,8 @@
+# Just Ate - React Basics
+
+## Index
+1. [App Components](#app-components)
+      * [Menu Item Component](#menu-item-component)
 
 ## App Summary
 
