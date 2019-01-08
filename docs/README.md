@@ -81,7 +81,7 @@ The component preview of the menu-section when collapsed is shown below.
 | id              | string    | unique id of the menu-section                     | yes      |
 | title           | string    | title of the menu-section                         | yes      |
 | description     | string    | a short description of the menu section           | yes      |
-| menuItems       | array     | the price of the menu-section                     | yes      |
+| menuItems       | array     | array of menu item objects for the menu section   | yes      |
 | onClickMenuItem | function  | on click function passed to the child component   | yes      |
 
 *Note:* If any of the required props are missing the component should NOT be rendered. 
@@ -93,7 +93,7 @@ The component preview of the menu-section when collapsed is shown below.
   id="123"
   title="Some Title"
   description="Some description"
-  menuItems=[{ id: '111', title: 'Foo', description: 'Bar', price: 4.99 }, ...]
+  menuItems={[{ id: '111', title: 'Foo', description: 'Bar', price: 4.99 }, ...]}
   onClickMenuItem={() => {/* function to invoke on click event */}}
 />
 ```
@@ -170,6 +170,230 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
       <div class="row">
         <div class="col-sm-12 menu_item--description">
           <span>Beef patty, beef stock, cheese spread, monetary jack cheese & halo sauce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Menu Component
+
+This is a function-based component that should render the individual menu and display information such as title, address, image, reviews, ratings, and a list of menu-section components. The component preview of the menu is shown below.
+
+![Menu Section Exapned Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_preview.png)
+
+#### Props
+
+| Prop Name       | Prop Type | Description                                       | Required |
+|:---------------:|:---------:|:-------------------------------------------------:|:--------:|
+| id              | string    | unique id of the menu                             | yes      |
+| title           | string    | title of the menu                                 | yes      |
+| address         | string    | address of the restaurant                         | yes      |
+| imgUrl          | string    | link to the restaurant logo image                 | yes      |
+| reviews         | string    | reviews of the restaurant                         | yes      |
+| rating          | string    | rating of the restaurant                          | yes      |
+| menuSections    | array     | array of menu section objects for the menu        | yes      |
+| onClickMenuItem | function  | on click function passed to the child component   | yes      |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+  
+```javascript
+<Menu
+  id="123"
+  title="Some Title"
+  address="Somewhere"
+  imgUrl="https://some-img.com"
+  reviews={2000}
+  rating={4.5}
+  menuSections={[
+      {
+            id: '1',
+            title: 'Section',
+            description: 'Section description',
+            menuItems: [{ id: '111', title: 'Foo', description: 'Bar', price: 4.99 }, ...]
+      }, ...
+  ]}
+  onClickMenuItem={() => {/* function to invoke on click event */}}
+/>
+```
+
+#### HTML Template
+The HTML template for the menu is as shown below. Open the file [menu.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/menu/menu.html) from the project on your local machine in any web browser to preview the styled menu component.
+
+```html
+<div class="restaurant">
+  <div class="media">
+    <div class="media-left">
+      <img class="mr-3" src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35.jpg" alt="Halo" width="120" height="100" />
+    </div>
+    <div class="media-body">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Halo</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <span>Star ratings</span>
+        </div>
+        <div class="col-sm-10">
+          <span>2067 reviews</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <span>109 London Road, Stockport, SK7 4HH</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menu_section">
+      <div class="menu_section--header">
+        <div class="row">
+          <div class="col-sm-11 menu_section--title">
+            <span>Burgers</span>
+          </div>
+          <div class="col-sm-1">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#burgers">v</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 menu_section--description">
+            <span>All burgers include lettuce, red onions & tomatoes. Add fries £1.39, curly fries £1.79 & sweet potato fries £2.29 extra are available.</span>
+          </div>
+        </div>
+      </div>
+      <div class="collapse menu_section--body" id="burgers">
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Common Guy Burger</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£3.99</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I001" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Classic beef patty served with American cheese, lettuce, onion, tomato & ketchup on a toasted sesame seed bun.</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Classic Chicken Burger</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£3.99</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I002" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Classic chicken fillet burger served with lettuce & mayo on a toasted sesame bun</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Deluxe Cheeseburger</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£4.69</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I003" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Beef patty, beef stock, cheese spread, monetary jack cheese & halo sauce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu_section">
+      <div class="menu_section--header">
+        <div class="row">
+          <div class="col-sm-11 menu_section--title">
+            <span>Wraps</span>
+          </div>
+          <div class="col-sm-1">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#wraps">v</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 menu_section--description">
+            <span>Add fries £1.39, curly fries £1.79 & sweet potato fries £2.29 extra are available.</span>
+          </div>
+        </div>
+      </div>
+      <div class="collapse menu_section--body" id="wraps">
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Classic Wrap</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£3.79</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I001" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Chicken fillet, lettuce & mayo</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Peri Wrap</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£3.99</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I002" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Chicken fillet, lettuce & peri mayo</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu_item">
+          <div class="row">
+            <div class="col-sm-10 menu_item--title">
+              <span>Mexican Wrap</span>
+            </div>
+            <div class="col-sm-1 menu_item--price">
+              <span>£4.79</span>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-success" id="S1I003" onClick="onClickFunction()">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 menu_item--description">
+              <span>Chicken fillet with American cheese, hot salsa, nachos, jalapenos & guacamole</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
