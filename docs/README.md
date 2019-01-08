@@ -66,9 +66,13 @@ The HTML template for the menu-item is as shown below. Open the file [menuItem.h
 
 ### Menu Section Component
 
-This is a function-based component that should render the individual menu-section and display information such as title, a short description, and a list of menu-item components. It should also render a button that allows a user to collapse/expand the panel containing the menu-items. The component preview is shown below.
+This is a function-based component that should render the individual menu-section and display information such as title, a short description, and a list of menu-item components. It should also render a button that allows a user to collapse/expand the panel containing the menu-items. The component preview of the menu-section when expanded is shown below.
 
-![Menu Section Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_section_preview.png)
+![Menu Section Exapned Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_section_open_preview.png)
+
+The component preview of the menu-section when collapsed is shown below.
+
+![Menu Section Collapsed Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_section_closed_preview.png)
 
 #### Props
 
