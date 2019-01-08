@@ -71,7 +71,7 @@ The HTML template for the menu-item is as shown below. Open the file [menuItem.h
   </div>
 </div>
 ```
-
+---
 ### Menu Section Component
 [Back to Index](#index)
 
@@ -185,7 +185,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
   </div>
 </div>
 ```
-
+---
 ### Menu Component
 [Back to Index](#index)
 
@@ -410,3 +410,4 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
   </div>
 </div>
 ```
+---
