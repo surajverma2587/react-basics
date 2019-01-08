@@ -3,6 +3,8 @@
 ## Index
 1. [App Components](#app-components)
       * [Menu Item Component](#menu-item-component)
+      * [Menu Section Component](#menu-section-component)
+      * [Menu Component](#menu-component)
 
 ## App Summary
 
