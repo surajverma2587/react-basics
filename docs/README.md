@@ -3,7 +3,7 @@
 
 **"Just Ate"** is a react-based web application, similar to [Just Eat](https://www.just-eat.co.uk/restaurants-halo-stockport/menu), that allows a user to view an online menu of a restaurant and add items to their cart. The online restaurant menu constitutes a list of menu-items, such as Cripsy Chicken Burger, under their respective menu-sections, such as Burgers, along with additional information such as title, a short description, price of the item, a button to add the item to the cart, and a collapsible panel for each menu-section.
 
-![App Preview](https://drive.google.com/file/d/1ReiwWpgdVIDunqmwANOGOiZbGNJtWdbR/view?usp=sharing)
+![App Preview](https://github.com/surajverma2587/react-basics/blob/master/docs/resources/app_preview.png)
 
 The cart displays the menu items added to the cart with the option of deleting the menu item/s from the cart along with pricing information such as sub-total, taxes, delivery fees and the total to pay.
 
