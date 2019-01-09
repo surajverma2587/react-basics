@@ -80,7 +80,7 @@ const discountCalculator = (amount, discountPercentage) => {
 const discountCalculator = (amount, discountPercentage) => amount - (amount * discountPercentage / 100);
 ```
 
-### Map function in React JSX
+### Map function
 [Back to Index](#index)
 
 The javaScript `.map()` method is widely used in React to render multiple components of the same type. For instance, a list of characters of a game can be rendered by mapping through the character array and rendering the list component for each character in the array. To ensure React’s DOM diff’ing works correctly, each component will require a unique key. A simple example of the map method in React is shown below:
