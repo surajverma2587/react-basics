@@ -17,7 +17,7 @@
       * [Cart Component](#cart-component)
 
 ## Useful React/ES6 Concepts
----
+
 ### Destructuring
 [Back to Index](#index)
 
