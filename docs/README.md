@@ -1,7 +1,10 @@
 # Just Ate - React Basics
 
 ## Index
-1. [App Components](#app-components)
+1. [React Concepts](#react-concepts)
+      * [Map function in React JSX](#map-function-in-react-jsx)
+      * [Destructuring](#destructuring)
+2. [App Components](#app-components)
       * [Menu Item Component](#menu-item-component)
       * [Menu Section Component](#menu-section-component)
       * [Menu Component](#menu-component)
@@ -9,6 +12,98 @@
       * [Cart Totals Component](#cart-totals-component)
       * [Cart Component](#cart-component)
 
+## Useful React/ES6 Concepts
+
+### Destructuring
+
+The destructuring assignment syntax is a JavaScript expression that will unpack the required key from a given object and assign the value to a const with the same name as the key.
+
+```javascript
+const props = {
+  name: 'Arthur Morgan',
+  bounty: 'Dead or Alive',
+  price: '$200',
+  associates: [
+    'Dutch Van De Linde',
+    'John Marston',
+    'Saddie Adler'
+  ],
+};
+
+/* Without destructuring */
+const name = props.name;
+const bounty = props.bounty;
+const price = props.price;
+const associates = props.associates;
+
+/* With destructuring */
+const { name, bounty, price, associates } = props;
+```
+
+### Arrow Function
+
+An arrow function (or fat arrow function) expression has a shorter syntax than a function expression and can be denoted as `() => {}`. If the function body contains on the return statement then the curly braces are not required along with the return keyword. However, if the function body has some code apart from the return statement then the curly braces are required along with the return keyword. The code below shows how an ES5 function is written in ES6 using arrow functions:
+
+```javascript
+/* When function body has only a return statement */
+
+// ES5
+const multiplier = function(x, y) {
+  return x * y;
+}
+
+// ES6
+const multiplier = (x, y) => x * y;
+
+/* When function body has more lines other than a return statement */
+
+// ES5
+const discountCalculator = function(amount, discountPercentage) {
+  const discount = amount * discountPercentage / 100;
+  const finalAmount = amount - discount;
+  return finalAmount;
+}
+
+// ES6
+const discountCalculator = (amount, discountPercentage) => {
+  const discount = amount * discountPercentage / 100;
+  const finalAmount = amount - discount;
+  return finalAmount;
+}
+```
+
+### Map function in React JSX
+
+The javaScript `.map()` method is widely used in React to render multiple components of the same type. For instance, a list of characters of a game can be rendered by mapping through the character array and rendering the list component for each character in the array. To ensure React’s DOM diff’ing works correctly, each component will require a unique key. A simple example of the map method in React is shown below:
+
+```javascript
+const listOfCharacters = [
+  'Arthur Morgan',
+  'Dutch Vand De Linde',
+  'John Marston',
+  'Saddie Adler',
+  'Leviticus Cornwall',
+];
+
+const ListItem = ({ name }) => {
+  return <li>{name}</li>
+}
+
+const Characters = () => {
+  return (
+    <div>
+      <h2>Red Dead redemption 2 charater list:</h2>
+      <ul>
+        {
+          listOfCharacters.map((character, index) => {
+            return <ListItem name={character} key={index} />
+          })
+        }
+      </ul>
+    </div>
+  )
+}
+```
 ## App Summary
 
 **"Just Ate"** is a react-based web application, similar to [Just Eat](https://www.just-eat.co.uk/restaurants-halo-stockport/menu), that allows a user to view an online menu of a restaurant and add items to their cart. The online restaurant menu constitutes a list of menu-items, such as Classic Wrap, under their respective menu-sections, such as Wraps, along with additional information such as restaurant information, titles, short descriptions, prices, buttons to add items to the cart, and collapsible panels for menu-sections (as shown below).
@@ -18,7 +113,7 @@
 The cart displays the menu items added to the cart, a delete button to delete the menu item/s from the cart along with pricing information such as sub-total, taxes, delivery fees and the total to pay (as shown below).
 
 ![Cart Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_preview.png)
-      
+
 ## App Components
 ### Menu Item Component
 [Back to Index](#index)
