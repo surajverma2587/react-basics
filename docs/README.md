@@ -5,6 +5,9 @@
       * [Menu Item Component](#menu-item-component)
       * [Menu Section Component](#menu-section-component)
       * [Menu Component](#menu-component)
+      * [Cart Item Component](#cart_item_component)
+      * [Cart Totals Component](#cart_totals_component)
+      * [Cart Component](#cart_component)
 
 ## App Summary
 
@@ -454,6 +457,235 @@ The HTML template for the cart-item is as shown below. Open the file [cartItem.h
     </div>
     <div class="col-sm-1">
       <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+    </div>
+  </div>
+</div>
+```
+
+### Cart Totals Component
+[Back to Index](#index)
+
+This is a function-based component that should render the cart-totals and display information such as the sub-total, taxes, delivery, and total price. The component preview is shown below.
+
+![Cart Totals Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_totals_preview.png)
+
+#### Props
+
+| Prop Name     | Prop Type | Description                                          | Required |
+|:-------------:|:---------:|:----------------------------------------------------:|:--------:|
+| subTotal      | number    | total of all the items                               | yes      |
+| taxes         | number    | 20% of the sub-total                                 | yes      |
+| delivery      | number    | £1.50 if sub-total is over £12                       | yes      |
+| total         | number    | sum of the sub-total, taxes and delivery             | yes      |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+
+```javascript
+<CartTotals
+  subTotal={10}
+  taxes={1}
+  delivery={0}
+  total={11}
+/>
+```
+
+#### HTML Template
+The HTML template for the cart-totals is as shown below. Open the file [cartTotals.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/cart/cartTotals.html) from the project on your local machine in any web browser to preview the styled cart-totals component.
+
+```html
+<div class="cart_totals">
+  <div class="row">
+    <div class="col-sm-6 cart_totals--info">
+      <span>Sub-Total:</span>
+    </div>
+    <div class="col-sm-6 cart_totals--price">
+      <span>£20.00</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 cart_totals--info">
+      <span>Taxes:</span>
+    </div>
+    <div class="col-sm-6 cart_totals--price">
+      <span>£2.50</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 cart_totals--info">
+      <span>Delivery:</span>
+    </div>
+    <div class="col-sm-6 cart_totals--price">
+      <span>£1.50</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 cart_totals--info">
+      <span>TOTAL:</span>
+    </div>
+    <div class="col-sm-6 cart_totals--price">
+      <span>£24.00</span>
+    </div>
+  </div>
+</div>
+```
+
+### Cart Item Component
+[Back to Index](#index)
+
+This is a function-based component that should render the individual cart-item and display information such as the item title and price in the cart. It should also render a button that allows a user to delete the respective item from the cart during an on-click event. The component preview is shown below.
+
+![Cart Item Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_item_preview.png)
+
+#### Props
+
+| Prop Name     | Prop Type | Description                                          | Required |
+|:-------------:|:---------:|:----------------------------------------------------:|:--------:|
+| id            | string    | unique id of the cart-item                           | yes      |
+| title         | string    | title of the cart-item                               | yes      |
+| price         | number    | the price of the cart-item                           | yes      |
+| onClick       | function  | the function to invoke when delete button is clicked | yes      |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+
+```javascript
+<CartItem
+  id="123"
+  title="Some Title"
+  price={3.99}
+  onClick={() => {/* function to invoke on click event */}}
+/>
+```
+
+#### HTML Template
+The HTML template for the cart-item is as shown below. Open the file [cartItem.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/cart/cartItem.html) from the project on your local machine in any web browser to preview the styled cart-item component.
+
+```html
+<div class="cart_item">
+  <div class="row">
+    <div class="col-sm-10 cart_item--title">
+      <span>Common Guy Burger</span>
+    </div>
+    <div class="col-sm-1 cart_item--price">
+      <span>£3.99</span>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+    </div>
+  </div>
+</div>
+```
+
+### Cart Component
+[Back to Index](#index)
+
+This is a function-based component that should render the cart and display information such as the cart items and cart totals. The component preview is shown below.
+
+![Cart Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_preview.png)
+
+#### Props
+
+| Prop Name       | Prop Type | Description                                          | Required |
+|:---------------:|:---------:|:----------------------------------------------------:|:--------:|
+| subTotal        | number    | total of all the items                               | yes      |
+| taxes           | number    | 20% of the sub-total                                 | yes      |
+| delivery        | number    | £1.50 if sub-total is over £12                       | yes      |
+| total           | number    | sum of the sub-total, taxes and delivery             | yes      |
+| selectedItems   | array     | array of cart-item objects                           | yes      |
+| onClickCartItem | function  | the function to invoke when delete button is clicked | yes      |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+
+```javascript
+<Cart
+  subTotal={10}
+  taxes={1}
+  delivery={0}
+  total={11}
+  selectedItems={[{
+    id: "1"
+    title: "Something"
+    price: 4.99
+    onClick: onClickFunction()
+  }, ...]},
+  onClickCartItem={onClickFunction()},
+/>
+```
+
+#### HTML Template
+The HTML template for the cart-totals is as shown below. Open the file [cart.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/cart/cart.html) from the project on your local machine in any web browser to preview the styled cart component.
+
+```html
+<div class="cart">
+  <div class="card">
+    <div class="card-body">
+      <span class="cart--title">Cart</span>
+      <hr />
+      <div class="cart_item">
+        <div class="row">
+          <div class="col-sm-10 cart_item--title">
+            <span>Common Guy Burger</span>
+          </div>
+          <div class="col-sm-1 cart_item--price">
+            <span>£3.99</span>
+          </div>
+          <div class="col-sm-1">
+            <button type="button" class="btn btn-danger" id="1" onClick="onClickFunction()">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart_item">
+        <div class="row">
+          <div class="col-sm-10 cart_item--title">
+            <span>Classic Wrap</span>
+          </div>
+          <div class="col-sm-1 cart_item--price">
+            <span>£3.79</span>
+          </div>
+          <div class="col-sm-1">
+            <button type="button" class="btn btn-danger" id="2" onClick="onClickFunction()">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart_totals">
+        <div class="row">
+          <div class="col-sm-6 cart_totals--info">
+            <span>Sub-Total:</span>
+          </div>
+          <div class="col-sm-6 cart_totals--price">
+            <span>£20.00</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 cart_totals--info">
+            <span>Taxes:</span>
+          </div>
+          <div class="col-sm-6 cart_totals--price">
+            <span>£2.50</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 cart_totals--info">
+            <span>Delivery:</span>
+          </div>
+          <div class="col-sm-6 cart_totals--price">
+            <span>£1.50</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 cart_totals--info">
+            <span>TOTAL:</span>
+          </div>
+          <div class="col-sm-6 cart_totals--price">
+            <span>£24.00</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
