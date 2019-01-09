@@ -2,8 +2,11 @@
 
 ## Index
 1. [React Concepts](#react-concepts)
-      * [Map function in React JSX](#map-function-in-react-jsx)
       * [Destructuring](#destructuring)
+      * [Arrow Function](#arrow-function)
+      * [Map function](#map-function)
+      * [Spread Operator](#spread-operator)
+      * [Template Literals](#template-literals)
 2. [App Components](#app-components)
       * [Menu Item Component](#menu-item-component)
       * [Menu Section Component](#menu-section-component)
@@ -15,6 +18,7 @@
 ## Useful React/ES6 Concepts
 
 ### Destructuring
+[Back to Index](#index)
 
 The destructuring assignment syntax is a JavaScript expression that will unpack the required key from a given object and assign the value to a const with the same name as the key.
 
@@ -41,6 +45,7 @@ const { name, bounty, price, associates } = props;
 ```
 
 ### Arrow Function
+[Back to Index](#index)
 
 An arrow function (or fat arrow function) expression has a shorter syntax than a function expression and can be denoted as `() => {}`. If the function body contains only the return statement then the curly braces are not required along with the return keyword. However, if the function body has some code apart from the return statement then the curly braces are required along with the return keyword. The code below shows how ES5 functions are written in ES6 using arrow functions:
 
@@ -76,6 +81,7 @@ const discountCalculator = (amount, discountPercentage) => amount - (amount * di
 ```
 
 ### Map function in React JSX
+[Back to Index](#index)
 
 The javaScript `.map()` method is widely used in React to render multiple components of the same type. For instance, a list of characters of a game can be rendered by mapping through the character array and rendering the list component for each character in the array. To ensure React’s DOM diff’ing works correctly, each component will require a unique key. A simple example of the map method in React is shown below:
 
@@ -109,6 +115,7 @@ const Characters = () => {
 ```
 
 ### Spread Operator
+[Back to Index](#index)
 
 Spread syntax allows an array or object to be expanded. It is denoted by 3 dots followed by the name of the array of object `...objectOrArray`. The code below shows the use case of the spread operator:
 
@@ -160,6 +167,7 @@ const props = {
 ```
 
 ### Template Literals
+[Back to Index](#index)
 
 Template literals is a new javaScript syntax for allowing string concatenation and embedding variables within strings. The code below shows an example of the usage of template literals:
 
