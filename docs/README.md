@@ -42,7 +42,7 @@ const { name, bounty, price, associates } = props;
 
 ### Arrow Function
 
-An arrow function (or fat arrow function) expression has a shorter syntax than a function expression and can be denoted as `() => {}`. If the function body contains on the return statement then the curly braces are not required along with the return keyword. However, if the function body has some code apart from the return statement then the curly braces are required along with the return keyword. The code below shows how an ES5 function is written in ES6 using arrow functions:
+An arrow function (or fat arrow function) expression has a shorter syntax than a function expression and can be denoted as `() => {}`. If the function body contains only the return statement then the curly braces are not required along with the return keyword. However, if the function body has some code apart from the return statement then the curly braces are required along with the return keyword. The code below shows how ES5 functions are written in ES6 using arrow functions:
 
 ```javascript
 /* When function body has only a return statement */
@@ -70,6 +70,9 @@ const discountCalculator = (amount, discountPercentage) => {
   const finalAmount = amount - discount;
   return finalAmount;
 }
+
+// OR
+const discountCalculator = (amount, discountPercentage) => amount - (amount * discountPercentage / 100);
 ```
 
 ### Map function in React JSX
@@ -104,6 +107,75 @@ const Characters = () => {
   )
 }
 ```
+
+### Spread Operator
+
+Spread syntax allows an array or object to be expanded. It is denoted by 3 dots followed by the name of the array of object `...objectOrArray`. The code below shows the use case of the spread operator:
+
+```javascript
+const userObject = {
+  name: 'Arthur Morgan',
+  address: 'Valentine',
+  age: 45,
+}
+
+const anotherObject = {
+  name: 'Arthur Morgan',
+  address: 'Valentine',
+  age: 45,
+  bounty: 'Dead or Alive',
+  price: '$200',
+}
+
+// Using the spread opertor
+const spreadObject = {
+  ...userObject,
+  bounty: 'Dead or Alive',
+  price: '$200',
+}
+```
+
+The code below shows the use case of the spread operators in React when passing props to the Bounty component:
+
+```javascript
+const props = {
+  name: 'Arthur Morgan',
+  address: 'Valentine',
+  age: "45",
+  bounty: 'Dead or Alive',
+  price: '$200',
+}
+
+// Without props spreading
+<Bounty
+  name={props.name}
+  address={props.address}
+  age={props.age}
+  bounty={props.bounty}
+  price={props.price}
+/>
+
+// With props spreading
+<Bounty {...props} />
+```
+
+### Template Literals
+
+Template literals is a new javaScript syntax for allowing string concatenation and embedding variables within strings. The code below shows an example of the usage of template literals:
+
+```javascript
+
+const firstName = 'Arthur';
+const lastName = 'Morgan';
+const age = 45;
+
+// Without template literals
+const formattedString = firstName + ' ' + lastName + ' is ' + age + ' years old!!';
+
+// With template literals
+const formattedString = `${firstName} ${lastName} is ${age} years old!!`;
+```
+
 ## App Summary
 
 **"Just Ate"** is a react-based web application, similar to [Just Eat](https://www.just-eat.co.uk/restaurants-halo-stockport/menu), that allows a user to view an online menu of a restaurant and add items to their cart. The online restaurant menu constitutes a list of menu-items, such as Classic Wrap, under their respective menu-sections, such as Wraps, along with additional information such as restaurant information, titles, short descriptions, prices, buttons to add items to the cart, and collapsible panels for menu-sections (as shown below).
