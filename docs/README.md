@@ -17,7 +17,7 @@
       * [Cart Component](#cart-component)
 
 ## Useful React/ES6 Concepts
-
+---
 ### Destructuring
 [Back to Index](#index)
 
@@ -44,7 +44,7 @@ const associates = props.associates;
 /* With destructuring */
 const { name, bounty, price, associates } = props;
 ```
-
+---
 ### Arrow Function
 [Back to Index](#index)
 
@@ -80,7 +80,7 @@ const discountCalculator = (amount, discountPercentage) => {
 // OR
 const discountCalculator = (amount, discountPercentage) => amount - (amount * discountPercentage / 100);
 ```
-
+---
 ### Map function
 [Back to Index](#index)
 
@@ -114,7 +114,7 @@ const Characters = () => {
   )
 }
 ```
-
+---
 ### Spread Operator
 [Back to Index](#index)
 
@@ -166,7 +166,7 @@ const props = {
 // With props spreading
 <Bounty {...props} />
 ```
-
+---
 ### Template Literals
 [Back to Index](#index)
 
@@ -184,7 +184,7 @@ const formattedString = firstName + ' ' + lastName + ' is ' + age + ' years old!
 // With template literals
 const formattedString = `${firstName} ${lastName} is ${age} years old!!`;
 ```
-
+---
 ## App Summary
 [Back to Index](#index)
 
@@ -195,7 +195,7 @@ const formattedString = `${firstName} ${lastName} is ${age} years old!!`;
 The cart displays the menu items added to the cart, a delete button to delete the menu item/s from the cart along with pricing information such as sub-total, taxes, delivery fees and the total to pay (as shown below).
 
 ![Cart Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_preview.png)
-
+---
 ## App Components
 ### Menu Item Component
 [Back to Index](#index)
