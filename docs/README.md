@@ -410,3 +410,51 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
   </div>
 </div>
 ```
+
+### Cart Item Component
+[Back to Index](#index)
+
+This is a function-based component that should render the individual cart-item and display information such as the item title and price in the cart. It should also render a button that allows a user to delete the respective item from the cart during an on-click event. The component preview is shown below.
+
+![Cart Item Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_item_preview.png)
+
+#### Props
+
+| Prop Name     | Prop Type | Description                                          | Required |
+|:-------------:|:---------:|:----------------------------------------------------:|:--------:|
+| id            | string    | unique id of the cart-item                           | yes      |
+| title         | string    | title of the cart-item                               | yes      |
+| price         | number    | the price of the cart-item                           | yes      |
+| onClick       | function  | the function to invoke when delete button is clicked | yes      |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+
+```javascript
+<CartItem
+  id="123"
+  title="Some Title"
+  price={3.99}
+  onClick={() => {/* function to invoke on click event */}}
+/>
+```
+
+#### HTML Template
+The HTML template for the cart-item is as shown below. Open the file [cartItem.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/cart/cartItem.html) from the project on your local machine in any web browser to preview the styled cart-item component.
+
+```html
+<div class="cart_item">
+  <div class="row">
+    <div class="col-sm-10 cart_item--title">
+      <span>Common Guy Burger</span>
+    </div>
+    <div class="col-sm-1 cart_item--price">
+      <span>£3.99</span>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+    </div>
+  </div>
+</div>
+```
