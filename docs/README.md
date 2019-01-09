@@ -186,6 +186,7 @@ const formattedString = `${firstName} ${lastName} is ${age} years old!!`;
 ```
 
 ## App Summary
+[Back to Index](#index)
 
 **"Just Ate"** is a react-based web application, similar to [Just Eat](https://www.just-eat.co.uk/restaurants-halo-stockport/menu), that allows a user to view an online menu of a restaurant and add items to their cart. The online restaurant menu constitutes a list of menu-items, such as Classic Wrap, under their respective menu-sections, such as Wraps, along with additional information such as restaurant information, titles, short descriptions, prices, buttons to add items to the cart, and collapsible panels for menu-sections (as shown below).
 
