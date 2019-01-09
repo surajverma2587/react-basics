@@ -5,9 +5,9 @@
       * [Menu Item Component](#menu-item-component)
       * [Menu Section Component](#menu-section-component)
       * [Menu Component](#menu-component)
-      * [Cart Item Component](#cart_item_component)
-      * [Cart Totals Component](#cart_totals_component)
-      * [Cart Component](#cart_component)
+      * [Cart Item Component](#cart-item-component)
+      * [Cart Totals Component](#cart-totals-component)
+      * [Cart Component](#cart-component)
 
 ## App Summary
 
