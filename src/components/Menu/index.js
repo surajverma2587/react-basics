@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 /* https://www.npmjs.com/package/react-star-ratings */
 import StarRatings from 'react-star-ratings';
 import MenuSection from './MenuSection';
-import '../../assets/styles.css';
 
 const renderMenuSections = (/* menuSections */) => {
   /* map through the menuSections prop and return a list of MenuSection components */

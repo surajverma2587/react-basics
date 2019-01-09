@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CartItem from './CartItem';
 import CartTotals from './CartTotals';
-import '../../assets/styles.css';
 
 const renderCartItems = (/* cartItems */) => {
   // return list of CartItem components

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from './MenuItem';
-import '../../assets/styles.css';
 
 const renderMenuItems = (/* menuItems */) => {
   /* map through the menuItems prop and return a list of MenuItem components */

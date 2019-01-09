@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../assets/styles.css';
 
 const CartTotals = (/* props object */) => {
   /* bind the data from the props object to the html template */
