@@ -3,6 +3,7 @@ import {
   calculateTaxes,
   calculateDelivery,
   calculateTotal,
+  recalculate,
 } from '../../helpers/cartHelper';
 
 describe('calculateSubTotal', () => {
@@ -97,3 +98,55 @@ describe('calculateTotal', () => {
     expect(actual).toEqual(expected)
   })
 })
+
+describe('recalculate', () => {
+  test('should return an object of recalculated values', () => {
+    const expected = {
+      subTotal: 55.5,
+      taxes: 11.1,
+      delivery: 0,
+      total: 66.6,
+    }
+    const selectedItems = [
+      {
+        id: '1',
+        title: 'title 1',
+        description: 'description 1',
+        price: 50.00
+      },
+      {
+        id: '2',
+        title: 'title 2',
+        description: 'description 2',
+        price: 5.50
+      },
+    ]
+    const actual = recalculate(selectedItems)
+
+    expect(actual).toEqual(expected)
+  });
+
+  test('should return defaults when selectedItems is an empty array', () => {
+    const expected = {
+      subTotal: 0,
+      taxes: 0,
+      delivery: 0,
+      total: 0,
+    }
+    const actual = recalculate([])
+
+    expect(actual).toEqual(expected)
+  });
+
+  test('should return defaults when no param is passed', () => {
+    const expected = {
+      subTotal: 0,
+      taxes: 0,
+      delivery: 0,
+      total: 0,
+    }
+    const actual = recalculate()
+
+    expect(actual).toEqual(expected)
+  });
+});
