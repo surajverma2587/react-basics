@@ -11,7 +11,7 @@
 3. [App Components](#app-components)
       * [Menu Item](#menu-item)
       * [Menu Section](#menu-section)
-      * [Menu Header](#menu-section)
+      * [Menu Header](#menu-header)
       * [Menu](#menu)
       * [Cart Item](#cart-item)
       * [Cart Totals](#cart-totals)
