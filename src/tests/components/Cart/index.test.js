@@ -42,7 +42,7 @@ describe('Cart Component', () => {
       expect(cart.exists()).toBe(true);
     });
 
-    it('should render the CartItem component', () => {
+    it('should render the CartItem components', () => {
       const cartItems = wrapper.find('CartItem');
       expect(cartItems.length).toEqual(2);
       cartItems.forEach((cartItem, index) => {
