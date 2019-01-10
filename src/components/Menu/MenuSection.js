@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from './MenuItem';
 
-const renderMenuItems = (/* menuItems */) => {
-  /* map through the menuItems prop and return a list of MenuItem components */
+const renderMenuItems = (/* params */) => {
+  /* map through the menu items and return a list of MenuItem components */
 };
 
 const MenuSection = (/* props object */) => {

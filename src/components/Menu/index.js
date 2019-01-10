@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 /* external library to render the stars for ratings */
 /* https://www.npmjs.com/package/react-star-ratings */
-import StarRatings from 'react-star-ratings';
+import MenuHeader from './MenuHeader';
 import MenuSection from './MenuSection';
 
-const renderMenuSections = (/* menuSections */) => {
-  /* map through the menuSections prop and return a list of MenuSection components */
+const renderMenuSections = (/* params */) => {
+  /* map through the menu sections and return a list of MenuSection components */
 };
 
 const Menu = (/* props object */) => {
