@@ -9,12 +9,13 @@
       * [Template Literals](#template-literals)
 2. [App Summary](#app-summary)
 3. [App Components](#app-components)
-      * [Menu Item Component](#menu-item-component)
-      * [Menu Section Component](#menu-section-component)
-      * [Menu Component](#menu-component)
-      * [Cart Item Component](#cart-item-component)
-      * [Cart Totals Component](#cart-totals-component)
-      * [Cart Component](#cart-component)
+      * [Menu Item](#menu-item)
+      * [Menu Section](#menu-section)
+      * [Menu Header](#menu-section)
+      * [Menu](#menu)
+      * [Cart Item](#cart-item)
+      * [Cart Totals](#cart-totals)
+      * [Cart](#cart)
 
 ## Useful React/ES6 Concepts
 
@@ -197,7 +198,7 @@ The cart displays the menu items added to the cart, a delete button to delete th
 ![Cart Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/cart_preview.png)
 ---
 ## App Components
-### Menu Item Component
+### Menu Item
 [Back to Index](#index)
 
 This is a function-based component that should render the individual menu-item and display information such as title, a short description, and price of the menu-item. It should also render a button that allows a user to add the respective menu-item to the cart during an on-click event. The component preview is shown below.
@@ -252,7 +253,7 @@ The HTML template for the menu-item is as shown below. Open the file [menuItem.h
 </div>
 ```
 ---
-### Menu Section Component
+### Menu Section
 [Back to Index](#index)
 
 This is a function-based component that should render the individual menu-section and display information such as title, a short description, and a list of menu-item components. It should also render a button that allows a user to collapse/expand the panel containing the menu-items. The component preview of the menu-section when expanded is shown below.
@@ -366,7 +367,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
 </div>
 ```
 ---
-### Menu Header Component
+### Menu Header
 [Back to Index](#index)
 
 This is a function-based component that should render the menu-header and display information such as title, address, image, reviews and ratings. The component preview is shown below.
@@ -428,7 +429,7 @@ The HTML template for the menu-header is as shown below. Open the file [menuHead
 </div>
 ```
 ---
-### Menu Component
+### Menu
 [Back to Index](#index)
 
 This is a function-based component that should render the individual menu and display the menu-header component and a list of menu-section components. The component preview of the menu is shown below.
@@ -653,7 +654,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
 </div>
 ```
 
-### Cart Item Component
+### Cart Item
 [Back to Index](#index)
 
 This is a function-based component that should render the individual cart-item and display information such as the item title and price in the cart. It should also render a button that allows a user to delete the respective item from the cart during an on-click event. The component preview is shown below.
@@ -701,7 +702,7 @@ The HTML template for the cart-item is as shown below. Open the file [cartItem.h
 </div>
 ```
 
-### Cart Totals Component
+### Cart Totals
 [Back to Index](#index)
 
 This is a function-based component that should render the cart-totals and display information such as the sub-total, taxes, delivery, and total price. The component preview is shown below.
@@ -770,7 +771,7 @@ The HTML template for the cart-totals is as shown below. Open the file [cartTota
 </div>
 ```
 
-### Cart Item Component
+### Cart Item
 [Back to Index](#index)
 
 This is a function-based component that should render the individual cart-item and display information such as the item title and price in the cart. It should also render a button that allows a user to delete the respective item from the cart during an on-click event. The component preview is shown below.
@@ -818,7 +819,7 @@ The HTML template for the cart-item is as shown below. Open the file [cartItem.h
 </div>
 ```
 
-### Cart Component
+### Cart
 [Back to Index](#index)
 
 This is a function-based component that should render the cart and display information such as the cart items and cart totals. The component preview is shown below.
