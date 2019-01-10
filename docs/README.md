@@ -3,6 +3,7 @@
 ## Index
 1. [Getting Started](#getting-started)
       * [Install Node and NPM](#install-node-and-npm)
+      * [Running Tests](#running-tests)
 2. [Available Scripts](#available-scripts)
 3. [Useful React And ES6 Concepts](#useful-react-and-es6-concepts)
       * [Destructuring](#destructuring)
@@ -45,6 +46,12 @@ Steps to install and use the latest version of node:
 - Use the latest version with `nvm use node`
 - Install the latest LTS version with `nvm install --lts`
 - Use the latest LTS verison with `nvm use --lts`
+
+### Running Tests
+[Back to Index](#index)
+
+The test framework uses Enzyme and Jest to run unit tests. The test setup has been done and tests have been written so that you can adopt a TDD approach when developing the indiviudal modules. You can run `npm run test` which will run the tests in a watch mode and re-run tests upon any code change. When all tests pass for a given module you can proceed to the next module.
+
 ---
 
 ## Available Scripts
