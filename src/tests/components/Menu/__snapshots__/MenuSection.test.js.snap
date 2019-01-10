@@ -22,7 +22,7 @@ exports[`MenuSection Component when props are valid should render snapshot of th
       >
         <button
           className="btn btn-primary"
-          data-target="#11"
+          data-target="#S1"
           data-toggle="collapse"
           type="button"
         >
@@ -44,23 +44,23 @@ exports[`MenuSection Component when props are valid should render snapshot of th
   </div>
   <div
     className="collapse menu_section--body"
-    id="11"
+    id="S1"
   >
     <MenuItem
-      description="description 1"
-      id="1"
-      key="1"
+      description="Description 1"
+      id="I1"
+      key="I1"
       onClick={[MockFunction]}
-      price={4}
-      title="title 1"
+      price={4.99}
+      title="Title 1"
     />
     <MenuItem
-      description="description 2"
-      id="2"
-      key="2"
+      description="Description 2"
+      id="I2"
+      key="I2"
       onClick={[MockFunction]}
-      price={10}
-      title="title 2"
+      price={6.49}
+      title="Title 2"
     />
   </div>
 </div>

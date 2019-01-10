@@ -4,98 +4,33 @@ exports[`Menu Component when props are valid should render snapshot of the compo
 <div
   className="restaurant"
 >
-  <div
-    className="media"
-  >
-    <div
-      className="media-left"
-    >
-      <img
-        alt="Menu title"
-        className="mr-3"
-        height={100}
-        src="https://google.com"
-        width={120}
-      />
-    </div>
-    <div
-      className="media-body"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="col-sm-12"
-        >
-          <h2>
-            Menu title
-          </h2>
-        </div>
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="col-sm-2"
-        >
-          <StarRatings
-            changeRating={null}
-            gradientPathName=""
-            ignoreInlineStyles={false}
-            numberOfStars={5}
-            rating={2.5}
-            starDimension="20px"
-            starEmptyColor="rgb(203, 211, 227)"
-            starHoverColor="rgb(230, 67, 47)"
-            starRatedColor="red"
-            starSpacing="1px"
-            svgIconPath="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
-            svgIconViewBox="0 0 51 48"
-            typeOfWidget="Star"
-          />
-        </div>
-        <div
-          className="col-sm-10"
-        >
-          <span>
-            100
-             reviews
-          </span>
-        </div>
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="col-sm-12"
-        >
-          <span>
-            Menu address
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <MenuHeader
+    address="Menu address"
+    imgUrl="https://google.com"
+    rating={2.5}
+    reviews={100}
+    title="Menu title"
+  />
   <div
     className="menu"
   >
     <MenuSection
       description="Section description 1"
-      id="11"
-      key="11"
+      id="S1"
+      key="S1"
       menuItems={
         Array [
           Object {
-            "description": "description 1",
-            "id": "1",
+            "description": "Item description 1",
+            "id": "I1",
             "price": 4,
-            "title": "title 1",
+            "title": "Item title 1",
           },
           Object {
-            "description": "description 2",
-            "id": "2",
-            "price": 10,
-            "title": "title 2",
+            "description": "Item description 2",
+            "id": "I2",
+            "price": 5,
+            "title": "Item title 2",
           },
         ]
       }
@@ -104,21 +39,21 @@ exports[`Menu Component when props are valid should render snapshot of the compo
     />
     <MenuSection
       description="Section description 2"
-      id="2"
-      key="2"
+      id="S2"
+      key="S2"
       menuItems={
         Array [
           Object {
-            "description": "description 3",
-            "id": "3",
+            "description": "Item description 3",
+            "id": "I3",
             "price": 2,
-            "title": "title 3",
+            "title": "Item title 3",
           },
           Object {
-            "description": "description 4",
-            "id": "4",
+            "description": "Item description 4",
+            "id": "I4",
             "price": 8,
-            "title": "title 4",
+            "title": "Item title 4",
           },
         ]
       }

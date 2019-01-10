@@ -4,21 +4,21 @@ import { shallow } from 'enzyme';
 import MenuSection from '../../../components/Menu/MenuSection';
 
 const props = {
-  id: '11',
+  id: 'S1',
   title: 'Section title',
   description: 'Section description',
   menuItems: [
     {
-      id: '1',
-      title: 'title 1',
-      description: 'description 1',
-      price: 4
+      id: 'I1',
+      title: 'Title 1',
+      description: 'Description 1',
+      price: 4.99
     },
     {
-      id: '2',
-      title: 'title 2',
-      description: 'description 2',
-      price: 10
+      id: 'I2',
+      title: 'Title 2',
+      description: 'Description 2',
+      price: 6.49
     },
   ],
   onClickMenuItem: jest.fn(),
@@ -57,7 +57,7 @@ describe('MenuSection Component', () => {
     });
   
     it('should render the collapsible div containing menu items', () => {
-      const collapsibleDiv = wrapper.find('.collapse');  
+      const collapsibleDiv = wrapper.find('.menu_section--body');  
       expect(collapsibleDiv.prop('id')).toEqual(props.id);
     });
   

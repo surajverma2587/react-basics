@@ -4,46 +4,46 @@ import { shallow } from 'enzyme';
 import Menu from '../../../components/Menu';
 
 const props = {
-  id: 'A',
+  id: 'M1',
   title: 'Menu title',
   address: 'Menu address',
   imgUrl: 'https://google.com',
   reviews: 100,
   rating: 2.5,
   menuSections: [{
-    id: '11',
+    id: 'S1',
     title: 'Section title 1',
     description: 'Section description 1',
     menuItems: [
       {
-        id: '1',
-        title: 'title 1',
-        description: 'description 1',
+        id: 'I1',
+        title: 'Item title 1',
+        description: 'Item description 1',
         price: 4
       },
       {
-        id: '2',
-        title: 'title 2',
-        description: 'description 2',
-        price: 10
+        id: 'I2',
+        title: 'Item title 2',
+        description: 'Item description 2',
+        price: 5
       },
     ],
     onClickMenuItem: jest.fn(),
   }, {
-    id: '2',
+    id: 'S2',
     title: 'Section title 2',
     description: 'Section description 2',
     menuItems: [
       {
-        id: '3',
-        title: 'title 3',
-        description: 'description 3',
+        id: 'I3',
+        title: 'Item title 3',
+        description: 'Item description 3',
         price: 2
       },
       {
-        id: '4',
-        title: 'title 4',
-        description: 'description 4',
+        id: 'I4',
+        title: 'Item title 4',
+        description: 'Item description 4',
         price: 8
       },
     ],
@@ -69,32 +69,16 @@ describe('Menu Component', () => {
       expect(restaurant.exists()).toBe(true);
     });
 
-    it('should render the image in the menu header', () => {
-      const img = wrapper.find('img');
-      expect(img.prop('src')).toEqual(props.imgUrl);
-      expect(img.prop('alt')).toEqual(props.title);
+    it('should render the MenuHeader component', () => {
+      const menuHeader = wrapper.find('MenuHeader');
+      expect(menuHeader.length).toEqual(1);
+      expect(menuHeader.prop('title')).toEqual(props.title);
+      expect(menuHeader.prop('address')).toEqual(props.address);
+      expect(menuHeader.prop('imgUrl')).toEqual(props.imgUrl);
+      expect(menuHeader.prop('reviews')).toEqual(props.reviews);
+      expect(menuHeader.prop('rating')).toEqual(props.rating);
     });
   
-    it('should render the title of the restaurant', () => {
-      const title = wrapper.find('h2').at(0);
-      expect(title.text()).toEqual(props.title);
-    });
-  
-    it('should render the reviews of the restaurant', () => {
-      const reviews = wrapper.find('span').at(0);
-      expect(reviews.text()).toEqual(`${props.reviews} reviews`);
-    });
-
-    it('should render the address of the restaurant', () => {
-      const address = wrapper.find('span').at(1);
-      expect(address.text()).toEqual(props.address);
-    });
-  
-    it('should render the StarRatings component', () => {
-      const starRatings = wrapper.find('StarRatings');
-      expect(starRatings.prop('rating')).toEqual(props.rating);
-    });
-
     it('should render the MenuSection components', () => {
       const menuSections = wrapper.find('MenuSection');
       expect(menuSections.length).toEqual(2);
@@ -126,37 +110,6 @@ describe('Menu Component', () => {
         const wrapper = shallow(<Menu {...invalidProp} />);
         expect(wrapper.find('.restaurant').exists()).toBe(false);
       });
-    });
-
-    it('should render 0 reviews of the restaurant when reviews are not available', () => {
-      const noReviewProps = {
-        id: 'A',
-        title: 'Menu title',
-        address: 'Menu address',
-        imgUrl: 'https://google.com',
-        rating: 2.5,
-        menuSections: props.menuSections,
-        onClickMenuItem: jest.fn(),
-      }
-      const wrapper = shallow(<Menu {...noReviewProps} />);
-      const reviews = wrapper.find('span').at(0);
-      expect(reviews.text()).toEqual('0 reviews');
-    });
-
-    it('should render the StarRatings component with 0 stars when ratings is not available', () => {
-      const noRatingsProps = {
-        id: 'A',
-        title: 'Menu title',
-        address: 'Menu address',
-        imgUrl: 'https://google.com',
-        reviews: 22,
-        menuSections: props.menuSections,
-        onClickMenuItem: jest.fn(),
-      };
-      const wrapper = shallow(<Menu {...noRatingsProps} />);
-      const starRatings = wrapper.find('StarRatings');
-  
-      expect(starRatings.prop('rating')).toEqual(0);
     });
   });
 });

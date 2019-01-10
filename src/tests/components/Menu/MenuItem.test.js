@@ -4,10 +4,10 @@ import { shallow } from 'enzyme';
 import MenuItem from '../../../components/Menu/MenuItem';
 
 const props = {
-  id: '1',
-  title: 'Some title',
-  description: 'Some description',
-  price: 10,
+  id: 'I1',
+  title: 'Item title',
+  description: 'Item description',
+  price: 5.99,
   onClick: jest.fn()
 };
 

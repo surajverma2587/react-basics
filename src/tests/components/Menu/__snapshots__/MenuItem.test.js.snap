@@ -11,7 +11,7 @@ exports[`MenuItem Component when props are valid should render snapshot of the c
       className="col-sm-10 menu_item--title"
     >
       <span>
-        Some title
+        Item title
       </span>
     </div>
     <div
@@ -19,7 +19,7 @@ exports[`MenuItem Component when props are valid should render snapshot of the c
     >
       <span>
         £
-        10
+        5.99
       </span>
     </div>
     <div
@@ -27,7 +27,7 @@ exports[`MenuItem Component when props are valid should render snapshot of the c
     >
       <button
         className="btn btn-success"
-        id="1"
+        id="I1"
         onClick={[MockFunction]}
         type="button"
       >
@@ -42,7 +42,7 @@ exports[`MenuItem Component when props are valid should render snapshot of the c
       className="col-sm-12 menu_item--description"
     >
       <span>
-        Some description
+        Item description
       </span>
     </div>
   </div>
