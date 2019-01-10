@@ -18,10 +18,6 @@ class App extends Component {
     /* if you are using local data then update state with local data here */
   }
 
-  recalculate(/* items */) {
-    /* calculate the sub total, taxes, delivery and total and return the values */
-  }
-
   onClickCartItem(/* event */) {
     /* remove cart item from the list of cart items */
     /* recalculate the totals */
@@ -37,8 +33,8 @@ class App extends Component {
   render() {
     /* If the loading state is true then render loading */
     /* If the error state is true then render error */
-    /* Note: If the total is 0 then do not render the Cart. */
-    /* Else return the populated app template and replace the bottom return statement */
+    /* Note: If no items have been selected then do not render the Cart. */
+    /* return the populated app template and replace the bottom return statement */
     return (
       <div className="container">Your App goes here...</div>
     );

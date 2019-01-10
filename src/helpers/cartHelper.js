@@ -15,4 +15,8 @@ const calculateTotal = (/* params */) => {
   /* function to calculate the total of sub-total, taxes and delivery */
 }
 
-export { calculateSubTotal, calculateTaxes, calculateDelivery, calculateTotal }
+const recalculate = (/* params */) => {
+  /* re-calculate the sub total, taxes, delivery and total and return the values */
+}
+
+export { calculateSubTotal, calculateTaxes, calculateDelivery, calculateTotal, recalculate }
