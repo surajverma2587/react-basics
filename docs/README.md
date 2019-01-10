@@ -21,6 +21,7 @@
       * [Cart](#cart)
 
 ## Getting Started
+[Back to Index](#index)
 
 **Note:** You can use `node --version` to find the version of node installed and `npm ---version` to find the version of npm installed. Preferred node version is 10 and npm version is 6. If you do not have node and npm installed follow [this step](#install-node-and-npm) before proceeding.
 
@@ -32,6 +33,8 @@ npm install
 ```
 
 ### Install Node and NPM
+[Back to Index](#index)
+
 Steps to install and use the latest version of node:
 
 - Download the nvm install script via cURL:
@@ -45,6 +48,8 @@ Steps to install and use the latest version of node:
 ---
 
 ## Available Scripts
+[Back to Index](#index)
+
 In the project directory, you can run:
 
 ### `npm start`
