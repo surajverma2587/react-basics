@@ -305,7 +305,7 @@ The HTML template for the menu-item is as shown below. Open the file [menuItem.h
       <span>£3.99</span>
     </div>
     <div class="col-sm-1">
-      <button type="button" class="btn btn-success" id="id" onClick="onClickFunction()">+</button>
+      <button type="button" class="btn btn-success qa-menu-item-button" id="id" onClick="onClickFunction()">+</button>
     </div>
   </div>
   <div class="row">
@@ -381,7 +381,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
           <span>£3.99</span>
         </div>
         <div class="col-sm-1">
-          <button type="button" class="btn btn-success" id="S1I001" onClick="onClickFunction()">+</button>
+          <button type="button" class="btn btn-success qa-menu-item-button" id="S1I001" onClick="onClickFunction()">+</button>
         </div>
       </div>
       <div class="row">
@@ -399,7 +399,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
           <span>£3.99</span>
         </div>
         <div class="col-sm-1">
-          <button type="button" class="btn btn-success" id="S1I002" onClick="onClickFunction()">+</button>
+          <button type="button" class="btn btn-success qa-menu-item-button" id="S1I002" onClick="onClickFunction()">+</button>
         </div>
       </div>
       <div class="row">
@@ -417,7 +417,7 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
           <span>£4.69</span>
         </div>
         <div class="col-sm-1">
-          <button type="button" class="btn btn-success" id="S1I003" onClick="onClickFunction()">+</button>
+          <button type="button" class="btn btn-success qa-menu-item-button" id="S1I003" onClick="onClickFunction()">+</button>
         </div>
       </div>
       <div class="row">
@@ -593,7 +593,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£3.99</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I001" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I001" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -611,7 +611,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£3.99</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I002" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I002" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -629,7 +629,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£4.69</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I003" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I003" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -666,7 +666,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£3.79</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I001" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I001" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -684,7 +684,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£3.99</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I002" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I002" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -702,7 +702,7 @@ The HTML template for the menu is as shown below. Open the file [menu.html](http
               <span>£4.79</span>
             </div>
             <div class="col-sm-1">
-              <button type="button" class="btn btn-success" id="S1I003" onClick="onClickFunction()">+</button>
+              <button type="button" class="btn btn-success qa-menu-item-button" id="S1I003" onClick="onClickFunction()">+</button>
             </div>
           </div>
           <div class="row">
@@ -759,7 +759,7 @@ The HTML template for the cart-item is as shown below. Open the file [cartItem.h
       <span>£3.99</span>
     </div>
     <div class="col-sm-1">
-      <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+      <button type="button" class="btn btn-danger qa-cart-item-button" id="someID" onClick="onClickFunction()">-</button>
     </div>
   </div>
 </div>
@@ -876,7 +876,7 @@ The HTML template for the cart-item is as shown below. Open the file [cartItem.h
       <span>£3.99</span>
     </div>
     <div class="col-sm-1">
-      <button type="button" class="btn btn-danger" id="someID" onClick="onClickFunction()">-</button>
+      <button type="button" class="btn btn-danger qa-cart-item-button" id="someID" onClick="onClickFunction()">-</button>
     </div>
   </div>
 </div>
@@ -938,7 +938,7 @@ The HTML template for the cart-totals is as shown below. Open the file [cart.htm
             <span>£3.99</span>
           </div>
           <div class="col-sm-1">
-            <button type="button" class="btn btn-danger" id="1" onClick="onClickFunction()">-</button>
+            <button type="button" class="btn btn-danger qa-cart-item-button" id="1" onClick="onClickFunction()">-</button>
           </div>
         </div>
       </div>
@@ -951,7 +951,7 @@ The HTML template for the cart-totals is as shown below. Open the file [cart.htm
             <span>£3.79</span>
           </div>
           <div class="col-sm-1">
-            <button type="button" class="btn btn-danger" id="2" onClick="onClickFunction()">-</button>
+            <button type="button" class="btn btn-danger qa-cart-item-button" id="2" onClick="onClickFunction()">-</button>
           </div>
         </div>
       </div>

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-/* import the child components styles and helper functions here */
+import Cart from './Cart';
+import Menu from './Menu';
+import data from '../assets/data';
+import menuHelper from '../helpers/menuHelper';
+import cartHelper from '../helpers/cartHelper';
 
 class App extends Component {
   constructor(props) {
