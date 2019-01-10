@@ -380,7 +380,7 @@ This is a function-based component that should render the menu-header and displa
 |:-------------:|:---------:|:------------------------------------:|:--------:|:-------:|
 | title         | string    | unique id of the menu-item           | yes      |         |
 | address       | string    | title of the menu-item               | yes      |         |
-| imgUrl        | string    | a short description of the menu item | yes      |         |
+| imgUrl        | string    | a short description of the menu item | no       |''       |
 | reviews       | number    | total number of reviews              | no       |0        |
 | rating        | number    | overall restaurant rating out of 5   | no       |0        |
 
