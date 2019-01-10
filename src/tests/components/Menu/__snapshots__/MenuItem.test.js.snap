@@ -26,7 +26,7 @@ exports[`MenuItem Component when props are valid should render snapshot of the c
       className="col-sm-1"
     >
       <button
-        className="btn btn-success"
+        className="btn btn-success qa-menu-item-button"
         id="I1"
         onClick={[MockFunction]}
         type="button"

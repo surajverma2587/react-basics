@@ -26,7 +26,7 @@ exports[`CartItem Component when props are valid should render snapshot of the c
       className="col-sm-1"
     >
       <button
-        className="btn btn-danger"
+        className="btn btn-danger qa-cart-item-button"
         id="1"
         onClick={[MockFunction]}
         type="button"

@@ -1,0 +1,60 @@
+{
+  "id": "R1",
+  "title": "Restaurant title",
+  "address": "Restaurant address",
+  "imgUrl": "https://google.com",
+  "reviews": 1000,
+  "rating": 3.5,
+  "menuSections": [
+    {
+      "id": "S1",
+      "title": "Section title 1",
+      "description": "Section description 1",
+      "menuItems": [
+        {
+          "id": "I1",
+          "title": "Item title 1",
+          "description": "Item description 1",
+          "price": 10.00
+        },
+        {
+          "id": "I2",
+          "title": "Item title 2",
+          "description": "Item description 2",
+          "price": 5.00
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Section title 2",
+      "description": "Section description 2",
+      "menuItems": [
+        {
+          "id": "I3",
+          "title": "Item title 3",
+          "description": "Item description 3",
+          "price": 6.00
+        },
+        {
+          "id": "I4",
+          "title": "Item title 4",
+          "description": "Item description 4",
+          "price": 8.00
+        },
+        {
+          "id": "I5",
+          "title": "Item title 5",
+          "description": "Item description 5",
+          "price": 12.00
+        },
+        {
+          "id": "I6",
+          "title": "Item title 6",
+          "description": "Item description 6",
+          "price": 15.00
+        }
+      ]
+    }
+  ]
+}
