@@ -271,7 +271,7 @@ The component preview of the menu-section when collapsed is shown below.
 | title           | string    | title of the menu-section                         | yes      |
 | description     | string    | a short description of the menu section           | yes      |
 | menuItems       | array     | array of menu item objects for the menu section   | yes      |
-| onClickMenuItem | function  | on click function passed to the child component   | yes      |
+| onClickMenuItem | function  | the function to invoke when add button is clicked | yes      |
 
 *Note:* If any of the required props are missing the component should NOT be rendered. 
 
@@ -366,10 +366,72 @@ The HTML template for the menu-section is as shown below. Open the file [menuSec
 </div>
 ```
 ---
+### Menu Header Component
+[Back to Index](#index)
+
+This is a function-based component that should render the menu-header and display information such as title, address, image, reviews and ratings. The component preview is shown below.
+
+![Menu Header Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_header_preview.png)
+
+#### Props
+
+| Prop Name     | Prop Type | Description                          | Required |Defaults |
+|:-------------:|:---------:|:------------------------------------:|:--------:|:-------:|
+| title         | string    | unique id of the menu-item           | yes      |         |
+| address       | string    | title of the menu-item               | yes      |         |
+| imgUrl        | string    | a short description of the menu item | yes      |         |
+| reviews       | number    | total number of reviews              | no       |0        |
+| rating        | number    | overall restaurant rating out of 5   | no       |0        |
+
+*Note:* If any of the required props are missing the component should NOT be rendered. 
+
+#### Usage
+
+```javascript
+<MenuHeader
+  title="Some title"
+  address="Some address"
+  imgUrl="Some imgUrl"
+  reviews={200}
+  rating={3.8}
+/>
+```
+
+#### HTML Template
+The HTML template for the menu-header is as shown below. Open the file [menuHeader.html](https://github.com/surajverma2587/react-basics/blob/master/src/templates/menu/menuHeader.html) from the project on your local machine in any web browser to preview the styled menu-header component.
+
+```html
+<div class="media">
+  <div class="media-left">
+    <img class="mr-3" src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35.jpg" alt="Halo" width="120" height="100" />
+  </div>
+  <div class="media-body">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Halo</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <span>Star ratings</span>
+      </div>
+      <div class="col-sm-10">
+        <span>2067 reviews</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <span>109 London Road, Stockport, SK7 4HH</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+---
 ### Menu Component
 [Back to Index](#index)
 
-This is a function-based component that should render the individual menu and display information such as title, address, image, reviews, ratings, and a list of menu-section components. The component preview of the menu is shown below.
+This is a function-based component that should render the individual menu and display the menu-header component and a list of menu-section components. The component preview of the menu is shown below.
 
 ![Menu Section Exapned Component Preview](https://raw.githubusercontent.com/surajverma2587/react-basics/master/docs/resources/menu_preview.png)
 
