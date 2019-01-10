@@ -1,14 +1,17 @@
 # Just Ate - React Basics
 
 ## Index
-1. [React Concepts](#react-concepts)
+1. [Getting Started](#getting-started)
+      * [Install Node and NPM](#install-node-and-npm)
+2. [Available Scripts](#available-scripts)
+3. [Useful React And ES6 Concepts](#useful-react-and-es6-concepts)
       * [Destructuring](#destructuring)
       * [Arrow Function](#arrow-function)
       * [Map function](#map-function)
       * [Spread Operator](#spread-operator)
       * [Template Literals](#template-literals)
-2. [App Summary](#app-summary)
-3. [App Components](#app-components)
+4. [App Summary](#app-summary)
+5. [App Components](#app-components)
       * [Menu Item](#menu-item)
       * [Menu Section](#menu-section)
       * [Menu Header](#menu-header)
@@ -17,7 +20,55 @@
       * [Cart Totals](#cart-totals)
       * [Cart](#cart)
 
-## Useful React/ES6 Concepts
+## Getting Started
+
+**Note:** You can use `node --version` to find the version of node installed and `npm ---version` to find the version of npm installed. Preferred node version is 10 and npm version is 6. If you do not have node and npm installed follow [this step](#install-node-and-npm) before proceeding.
+
+```shell
+cd ~/Desktop
+git clone https://github.com/surajverma2587/react-basics.git
+cd react-basics/
+npm install
+```
+
+### Install Node and NPM
+Steps to install and use the latest version of node:
+
+- Download the nvm install script via cURL:
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash`
+- Ensure that nvm was installed correctly with `nvm --version`, which should return the version of nvm installed.
+- Install the version of Node.js you want using `nvm install version_you_want`
+- Install the latest version with `nvm install node`
+- Use the latest version with `nvm use node`
+- Install the latest LTS version with `nvm install --lts`
+- Use the latest LTS verison with `nvm use --lts`
+---
+
+## Available Scripts
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode with the silent and verbose options.<br>
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+---
+
+## Useful React and ES6 Concepts
 
 ### Destructuring
 [Back to Index](#index)
