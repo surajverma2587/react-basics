@@ -91,7 +91,9 @@ Your app is ready to be deployed!
 
 React components are building blocks to any React application where a composition of smaller components constitute towards the overall complex application. Components can be defined as classes or functions in React. 
 
-* Class-based Components: Components defined as classes currently provide more features compared to components defined as functions. To define a React component class, you need to extend `React.Component`. The only method you must define in a `React.Component` subclass is `render()`.
+#### Class-based Components
+
+Components defined as classes currently provide more features compared to components defined as functions. To define a React component class, you need to extend `React.Component`. The only method you must define in a `React.Component` subclass is `render()`.
 
 ```javascript
 import React, { Component } from 'react';
@@ -105,7 +107,9 @@ export class MyComponent extends Component {
 }
 ```
 
-* Function-based Components: You can think of these as pure functions because they will always render and behave the same, given the same props. Also, they don't care about lifecycle methods or have their own internal state.
+#### Function-based Components
+
+You can think of these as pure functions because they will always render and behave the same, given the same props. Also, they don't care about lifecycle methods or have their own internal state.
 
 ```javascript
 const MyComponent = (props) => {
