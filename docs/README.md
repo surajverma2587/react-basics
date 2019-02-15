@@ -50,7 +50,7 @@ Steps to install and use the latest version of node:
 ### Running Tests
 [Back to Index](#index)
 
-The test framework uses Enzyme and Jest to run unit tests. The test setup has been done and tests have been written so that you can adopt a TDD approach when developing the indiviudal modules. You can run `npm run test` which will run the tests in a watch mode and re-run tests upon any code change. When all tests pass for a given module you can proceed to the next module.
+The test framework uses [Enzyme](https://airbnb.io/enzyme/) and [Jest](https://jestjs.io/) to run unit tests. The test setup has been done and tests have been written so that you can adopt a TDD approach when developing the indiviudal modules. You can run `npm run test` which will run the tests in a watch mode and re-run tests upon any code change. When all tests pass for a given module you can proceed to the next module.
 
 ---
 
