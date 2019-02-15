@@ -1,18 +1,20 @@
 # Just Ate - React Basics
 
 ## Index
-1. [Getting Started](#getting-started)
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
       * [Install Node and NPM](#install-node-and-npm)
       * [Running Tests](#running-tests)
-2. [Available Scripts](#available-scripts)
-3. [Useful React And ES6 Concepts](#useful-react-and-es6-concepts)
+3. [Available Scripts](#available-scripts)
+4. [Useful React And ES6 Concepts](#useful-react-and-es6-concepts)
+      * [React Components](#react-components)
       * [Destructuring](#destructuring)
       * [Arrow Function](#arrow-function)
       * [Map function](#map-function)
       * [Spread Operator](#spread-operator)
       * [Template Literals](#template-literals)
-4. [App Summary](#app-summary)
-5. [App Components](#app-components)
+5. [App Summary](#app-summary)
+6. [App Components](#app-components)
       * [Menu Item](#menu-item)
       * [Menu Section](#menu-section)
       * [Menu Header](#menu-header)
@@ -20,6 +22,11 @@
       * [Cart Item](#cart-item)
       * [Cart Totals](#cart-totals)
       * [Cart](#cart)
+
+## Introduction
+[Back to Index](#index)
+
+[React](https://reactjs.org/) is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called [components](#react-components).
 
 ## Getting Started
 [Back to Index](#index)
@@ -78,6 +85,12 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 ## Useful React and ES6 Concepts
+
+### React Components
+[Back to Index](#index)
+
+React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component:
+The only method you must define in a React.Component subclass is called render().
 
 ### Destructuring
 [Back to Index](#index)
