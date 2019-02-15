@@ -163,7 +163,7 @@ const ListItem = ({ name }) => {
 const Characters = () => {
   return (
     <div>
-      <h2>Red Dead redemption 2 charater list:</h2>
+      <h2>Red Dead Redemption 2 character list:</h2>
       <ul>
         {
           listOfCharacters.map((character, index) => {
@@ -179,7 +179,7 @@ const Characters = () => {
 ### Spread Operator
 [Back to Index](#index)
 
-Spread syntax allows an array or object to be expanded. It is denoted by 3 dots followed by the name of the array of object `...objectOrArray`. The code below shows the use case of the spread operator:
+Spread syntax allows an array or object to be expanded. It is denoted by 3 dots followed by the name of the object or array `...objectOrArray`. The code below shows the use case of the spread operator:
 
 ```javascript
 const userObject = {
