@@ -196,7 +196,7 @@ const anotherObject = {
   price: '$200',
 }
 
-// Using the spread opertor
+// Using the spread operator we get the same value as anotherObject
 const spreadObject = {
   ...userObject,
   bounty: 'Dead or Alive',
@@ -224,7 +224,7 @@ const props = {
   price={props.price}
 />
 
-// With props spreading
+// With props spreading resulting in the same Bounty component as above
 <Bounty {...props} />
 ```
 ---
