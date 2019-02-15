@@ -26,7 +26,7 @@
 ## Introduction
 [Back to Index](#index)
 
-[React](https://reactjs.org/) is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called [components](#react-components).
+[React](https://reactjs.org/) is a front-end JavaScript based language developed by Facebook to allow declarative composition of simple stateless/stateful [components](#react-components) that construct an interactive UI.
 
 ## Getting Started
 [Back to Index](#index)
@@ -89,8 +89,7 @@ Your app is ready to be deployed!
 ### React Components
 [Back to Index](#index)
 
-React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component:
-The only method you must define in a React.Component subclass is called render().
+React components are building blocks to any React application where a composition of smaller components constitute towards the overall complex application. Components can be defined as classes or functions in React. Components defined as classes currently provide more features compared to components defined as functions. To define a React component class, you need to extend `React.Component`. The only method you must define in a `React.Component` subclass is `render()`.
 
 ### Destructuring
 [Back to Index](#index)
